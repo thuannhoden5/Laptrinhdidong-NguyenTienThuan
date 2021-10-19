@@ -1,4 +1,4 @@
-package com.example.codelab11;
+package com.example.helloworld;
 
 import org.junit.Test;
 
