@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/btn.xml" value="0.1398148148148148" />
         <entry key="app/src/main/res/drawable/btn_equals.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/drawable/btn_ex.xml" value="0.1398148148148148" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1398148148148148" />
         <entry key="app/src/main/res/drawable/ic_baseline_dehaze_24.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/drawable/ic_baseline_expand_more_24.xml" value="0.1398148148148148" />
+        <entry key="app/src/main/res/drawable/ic_baseline_restore_24.xml" value="0.1398148148148148" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/drawable/round_btn.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.29580492647344075" />
