@@ -10,6 +10,8 @@
         android:id="@+id/hoten"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:ems="10"
         android:hint="Họ và tên"
         android:inputType="textPersonName"
@@ -22,7 +24,9 @@
         android:id="@+id/mssv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
         android:ems="10"
         android:hint="MSSV"
         android:inputType="number"
@@ -34,6 +38,9 @@
         android:id="@+id/ngaysinh"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
         android:ems="10"
         android:hint="Ngày sinh"
         android:inputType="date"
@@ -45,9 +52,23 @@
         android:id="@+id/gioitinh"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ngaysinh">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="Giới tính"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/nam"
@@ -60,13 +81,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nữ" />
+
     </RadioGroup>
 
     <EditText
         android:id="@+id/sdt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
         android:ems="10"
         android:hint="Số điện thoại"
         android:inputType="number"
@@ -78,7 +102,9 @@
         android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -90,7 +116,7 @@
         android:id="@+id/thethao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:text="Thể thao"
         app:layout_constraintEnd_toStartOf="@+id/dulich"
         app:layout_constraintHorizontal_bias="0.5"
@@ -130,7 +156,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dulich" />
 
     <Button
-        android:id="@+id/sumbit"
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -146,10 +172,36 @@
         android:id="@+id/diachi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:ems="10"
         android:hint="Địa chỉ liên lạc"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gioitinh" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Sở thích"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/loi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yes" />
 </androidx.constraintlayout.widget.ConstraintLayout>
